@@ -53,12 +53,6 @@ http.interceptors.request.use(
 // 响应拦截器
 http.interceptors.response.use(
   response => {
-    const res = response.data;
-    if (res.code !== 20000) {
-      window.$message?.error(!res.message ? '系统异常' : res.message);
-      return Promise.reject(response);
-    }
-    window.$message?.success(res.message);
     return Promise.resolve(response);
   },
   error => {

@@ -306,6 +306,10 @@ async function GetUserListByName() {
 const createColumns = ({ sendMail }: any) => {
   return [
     {
+      type: 'selection',
+      fixed: 'left'
+    },
+    {
       title: '用户名',
       key: 'username',
       align: 'center'

@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { NCard } from 'naive-ui';
-import { DataTable, SearchTable } from '@/views/sys/menu/components';
+import { DataTable } from '@/views/sys/menu/components';
 </script>
 <template>
-  <n-card title="菜单管理界面" class="h-full shadow-sm rounded-16px">
-    <SearchTable></SearchTable>
+  <NCard title="菜单管理界面" class="h-full shadow-sm rounded-16px">
     <DataTable></DataTable>
-  </n-card>
+  </NCard>
 </template>
 
 <style></style>

@@ -1,9 +1,9 @@
 <template>
   <n-dropdown :options="options" @select="handleDropdown">
-    <hover-container class="px-12px">
-      <img :src="auth.userInfo.avatar" class="w-32px h-32px" />
+    <HoverContainer class="px-12px">
+      <img :src="auth.userInfo.avatar" class="w-32px h-32px" style="border-radius: 50%" />
       <span class="pl-8px text-16px font-medium">{{ auth.userInfo.username }}</span>
-    </hover-container>
+    </HoverContainer>
   </n-dropdown>
 </template>
 

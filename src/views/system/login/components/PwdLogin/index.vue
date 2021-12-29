@@ -50,7 +50,7 @@ onMounted(() => {
 const formRef = ref<(HTMLElement & FormInst) | null>(null);
 const model = reactive({
   phone: 'admin',
-  pwd: '111111',
+  pwd: '',
   code: ''
 });
 const rules: FormRules = {
